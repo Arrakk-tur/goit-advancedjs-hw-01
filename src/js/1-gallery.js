@@ -86,11 +86,10 @@ const galleryMarkup = images
   )
   .join('');
 
-// Додавання розмітки в DOM
 const gallery = document.querySelector('ul.gallery');
 gallery.innerHTML = galleryMarkup;
 
-// Ініціалізація SimpleLightbox
+// SimpleLightbox
 const lightbox = new SimpleLightbox('ul.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
